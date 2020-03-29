@@ -1,5 +1,5 @@
 #include <stdio.h>
-	struct student
+	struct student1
 	{
 	    int StudentId;
 	    int FoodTakenTime;
