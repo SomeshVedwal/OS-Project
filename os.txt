@@ -103,19 +103,20 @@
 	        }
 	    }
 	}
-	
-	
-	
-	
-	void turnAroundTime(struct student list[80], int n)
+	void waitingTime(struct student list[80], int n)
 	{
 		int j,total;
-	    
+	    list[0].WaitingTime=0;
 	    for(j=0;j<n;j++)
 	    {
-	        list[j].TurnAroundTime=list[j].completetimetaken - 0;
+	        list[j].WaitingTime=list[j].TurnAroundTime-list[j].FoodTakenTime;
 	    }
 	}
+	
+	
+	
+	
+	
 	
 	void completetime(struct student list[80], int n)
 	{
